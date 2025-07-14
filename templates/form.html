@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tambah Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="container mx-auto p-6">
+    <h1 class="text-2xl font-semibold mb-4">Tambah Produk</h1>
+    
+    <form action="/insert-process" method="POST" class="bg-white p-6 rounded-lg shadow-md space-y-4">
+      <div>
+        <label class="block mb-1 font-medium">ID_Produk</label>
+        <input name="id" type="number" class="w-full border border-gray-300 px-3 py-2 rounded" required />
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium">Nama_Produk</label>
+        <input name="Nama_Produk" class="w-full border border-gray-300 px-3 py-2 rounded" required />
+      </div>
+      
+      <div>
+        <label class="block mb-1 font-medium">Kategori_Produk</label>
+        <input name="Kategori_Produk" class="w-full border border-gray-300 px-3 py-2 rounded" required />
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium">Harga_Produk</label>
+        <input name="Harga_Produk" class="w-full border border-gray-300 px-3 py-2 rounded" required />
+      </div>
+
+      <div class="flex gap-4">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+           Simpan
+        </button>
+        <a href="/" class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+          Kembali
+        </a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
